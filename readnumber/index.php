@@ -135,8 +135,13 @@
                 case '9': $thirdNumber = 'nine';break;
             }
 
-
-            echo "$firstNumber hunderd and $secondNumber $thirdNumber";
+            if($secondNumber == '' && $thirdNumber == '') {
+                echo "$firstNumber hunderd $secondNumber $thirdNumber";
+            } else {
+                echo "$firstNumber hunderd and $secondNumber $thirdNumber";
+            }
+   
+            
         }
 
 
